@@ -1,6 +1,7 @@
 package com.hp.zuoye;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 /*
@@ -18,27 +19,8 @@ public class Test07 {
         }
         System.out.println("list = " + list);
 
-        for (int i = 0; i <list.size()-1 ; i++) {
-            for (int j = i+1; j <list.size() ; j++) {
-                int i1 = list.get(i);
-                int i2 = list.get(j);
-                if (i1>i2) {
-                    list.set(i,list.get(j));
-                    list.set(j,i1);
-                }
-            }
-        }
+        Collections.sort(list);//默认升序
         System.out.println("list = " + list);
 
-        /*int num = 0;
-        while (num<10){
-            int a = random.nextInt(10)+1;
-            if (!list.contains(a)) {
-                list.add(a);
-                num++;
-            }
-        }
-        System.out.println("list = " + list);
-*/
     }
 }

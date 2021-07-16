@@ -30,7 +30,6 @@ public class Test04 {
         //输出原集合
         System.out.println("list = " + list);
         //删除集合中的[7,8,9]
-        ArrayList list1 = new ArrayList<>();
         List<Integer> subList2 = list.subList(7,list.size());
         System.out.println("subList2 = " + subList2);//打印要删除的子集
         list.removeAll(subList2);

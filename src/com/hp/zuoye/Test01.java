@@ -33,7 +33,7 @@ public class Test01 {
         c3.add("five");
         System.out.println("c3 = " + c3);
         //输出集合c1是否包含集合c3的所有元素
-        System.out.println("c1是否包含c3: " + c1.contains(c3));
+        System.out.println("c1是否包含c3: " + c1.containsAll(c3));
         //将c1集合中的"two"删除后再输出c1集合
         c1.remove("two");
         System.out.println("c1 = " + c1);

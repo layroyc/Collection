@@ -55,11 +55,9 @@ public class DouDiZhuTest {
             List<String> diPai = new ArrayList<>();//3张底牌
         for (int i = 0; i <pukepai.size() ; i++) {
             String pName = pukepai.get(i);//每张扑克牌具体的牌数
-            if (i>=51) {
+            if (i>=51 && pName!="♥3") {
                 //规定个地主,  规定 谁摸到红桃3 谁是地主,  注意:  底牌里面不能包含红桃3 .
-                if(pName!="♥3") {
                     diPai.add(pName);//埋最后3张的底牌
-                }
             }else{
                 //给玩家1,2,3, 发 前面的 51张牌
                 if (i%3 == 0) {
