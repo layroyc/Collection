@@ -21,7 +21,6 @@ public class Test03 {
         //查看目录是否存在
         boolean exists = file.exists();//判断文件或目录是否存在
 
-        //D:\dashuju\ideaIU2018\works\集合日期\cc
         //创建目录
         if(exists){
             System.out.println("该目录已经存在");
