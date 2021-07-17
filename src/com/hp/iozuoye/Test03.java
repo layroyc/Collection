@@ -25,14 +25,22 @@ public class Test03 {
         //创建目录
         if(exists){
             System.out.println("该目录已经存在");
-            file.mkdirs();
+            int i = 0;
+            while(exists){
+                i++;
+                file = new File(dir+"_副本" + i);
+                System.out.println("file = " + file);
+                exists = file.isDirectory(); //判断目录是否存在
+            }
+            file.mkdirs();//目录不存在时，跳出循环接着创建新目录
             System.out.println("创建目录副本成功！");
         }else{
             System.out.println("该目录不存在");
             file.mkdir();
             System.out.println("创建目录" + dir);
         }
-
+        System.out.println("目录名为:" + file.getName());
+        scanner.close();
 
     }
 }
