@@ -41,5 +41,12 @@ public class IoDemo01 {
         long length = file.length();//长度
         System.out.println("length = " + length);
 
+
+        //文件的删除
+        if(exists){
+            System.out.println("文件删除");
+            file.delete();
+        }
+
     }
 }
